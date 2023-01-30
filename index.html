@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        * {
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+            /* overflow-x: scroll; */
+        }
+
+        .container {
+            /* min-height: 100vh; */
+            /* width: 100%; */
+            /* border: 2px solid green; */
+            display: flex;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 10% 35% 35% 20%;
+        }
+
+
+
+
+
+        .box {
+            /* border: 1px solid red; */
+
+        }
+
+        #header {
+            /* display: flex;  */
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        #contact {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #header {
+            display: flex;
+            /* text-decoration: none; */
+        }
+
+        #nav {
+            list-style-type: none;
+            display: flex;
+            gap: 75px;
+            margin-left: 15%;
+            color: gray;
+        }
+
+        #logo {
+            margin: 10px;
+            margin-top: 20px;
+        }
+
+
+        .item:hover {
+            color: blue;
+            cursor: pointer;
+            /* text-decoration: underline; */
+        }
+
+        #position {
+
+            background-color: blue;
+            color: white;
+            margin-left: 18%;
+            padding: 0 10px 0 10px;
+
+
+        }
+
+        #team h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+            padding: 20px;
+        }
+
+        #team p {
+            padding-left: 20px;
+            color: gray;
+        }
+
+        .neastedbox {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+
+        }
+
+        h4 {
+            text-transform: uppercase;
+            color: blue;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #contact {
+            color: gray;
+            /* padding: 10px; */
+
+        }
+
+        #myimage img {
+            height: 350px;
+            width: 600px;
+        }
+
+        #icon:hover{
+            color: rgb(0, 42, 255);
+        
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+            <div class="box" id="header">
+                <img id="logo" src="https://codehelp.s3.ap-south-1.amazonaws.com/qdo970k2vrxj8kefd1zt_9520ff468a.svg"
+                    alt="logo" height="30px">
+
+                <ul id="nav">
+                    <a href="#team">
+                        <li class="item">Team</li>
+                    </a>
+                    <a href="#myimage">
+                        <li class="item">About us</li>
+                    </a>
+                    <a href="#Course">
+                        <li class="item">Course</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="item">Contact</li>
+                    </a>
+
+                </ul>
+                <button id="position">start a Project</button>
+
+            </div>
+    
+            <div class="box" id="team">
+                <h2>Team Code Help</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla porro voluptates doloribus, vero quae
+                    temporibus tenetur, non minima ea voluptatum repudiandae unde reiciendis itaque omnis sint sapiente
+                    consequatur voluptate animi</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis mollitia est sapiente, molestias quas officia iste aut alias sint porro!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id tenetur, dolorum architecto ipsa accusantium laboriosam, distinctio, non doloremque necessitatibus et facilis optio quisquam voluptate amet mollitia molestias natus nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eveniet sed fuga quos dolor veniam placeat recusandae, officiis sapiente explicabo?</p>
+            </div>
+            <div class="box" id="myimage">
+
+                <img src="http://coderharsh.in/wp-content/uploads/2022/12/love-babbar-about-540x340.png" alt="">
+
+
+
+            </div>
+            <div class="box" id="myimage">
+
+                <img src="https://media.licdn.com/dms/image/C4D22AQGSvU4K3lV-TA/feedshare-shrink_2048_1536/0/1663846492872?e=1677110400&v=beta&t=ZSrEnVByRiJe4sI_Zk2Hj9pzftgMK3vFYkkK_laK-5w"
+                    alt="">
+
+
+            </div>
+            <div class="box" id="team">
+                <h2>Founder, CEO</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla porro voluptates doloribus, vero quae
+                    temporibus tenetur, non minima ea voluptatum repudiandae unde reiciendis itaque omnis sint sapiente
+                    consequatur voluptate animi?</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, reiciendis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quas ipsum, nobis maiores at dolorum eligendi cumque vitae, omnis eaque neque id! Velit reprehenderit temporibus in quam modi rem nobis dicta ut error illo doloribus praesentium facilis sapiente numquam animi asperiores est aspernatur harum, culpa vel. Quasi recusandae laborum, alias odit tempore vitae excepturi facilis necessitatibus explicabo iusto aspernatur architecto.</p>
+            </div>
+
+            <div class="neastedbox" id="contact">
+                <div class="box">
+                    <img id="logo"
+                        src="https://codehelp.s3.ap-south-1.amazonaws.com/qdo970k2vrxj8kefd1zt_9520ff468a.svg"
+                        alt="logo" height="20px">
+                    <h4>our privacy policy</h4>
+                    <p>&#169 Lorem ipsum dolor sit amet.</p>
+
+                </div>
+                <div class="box">
+                    <h4>address</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum</p>
+                    <h4>email</h4>
+                    <p>gagangk460@gmail.com</p>
+                </div>
+                <div class="box" id="footer">
+                    <h4>menu</h4>
+                    <ul>
+                        <li>Team</li>
+                        <li>About Us</li>
+                        <li>Courses</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="box" >
+                    <i id="icon" class="fa-brands fa-facebook"></i>
+                    <i id="icon" class="fa-brands fa-linkedin"></i>
+                    <i id="icon" class="fa-brands fa-instagram"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
